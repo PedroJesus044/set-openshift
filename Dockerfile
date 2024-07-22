@@ -1,6 +1,6 @@
 FROM ubi9
 USER 0
-RUN yum install -y git
+RUN yum install -y git python3-pip
 RUN git clone https://github.com/trustedsec/social-engineer-toolkit.git
 USER 1001
 RUN cd social-engineer-toolkit
